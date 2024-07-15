@@ -8,3 +8,13 @@ jobs:
     steps:
       - name: My first step
         run: echo This is the first step of my first job.
+      - name: OS Info
+        run: lsb_release -d
+
+  job_2:
+    runs-on: ubuntu:20.04
+    steps:
+      - name: My first step
+        run: echo This is the first step of my first job.
+      - name: OS Info
+        run: lsb_release -d
